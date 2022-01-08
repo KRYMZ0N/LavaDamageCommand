@@ -1,0 +1,7 @@
+name: LavaDamageCommand
+version: '${project.version}'
+main: me.krymz0n.lavadamagecommand.Main
+api-version: 1.17
+authors: [ KRYMZ0N ]
+description: Auto does a command when player takes lava damage
+website: www.3b3t.me
