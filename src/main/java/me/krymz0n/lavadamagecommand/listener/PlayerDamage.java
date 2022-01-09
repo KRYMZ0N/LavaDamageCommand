@@ -1,6 +1,7 @@
 package me.krymz0n.lavadamagecommand.listener;
 
 import me.krymz0n.lavadamagecommand.Main;
+import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -20,7 +21,8 @@ public class PlayerDamage implements Listener {
             Player p = (Player) evt.getEntity();
 
             if (evt.getCause() == EntityDamageEvent.DamageCause.LAVA) {
-                p.performCommand("warp event");
+                Location loc = new Location(p.getWorld(), 27646395, 115, 8434093);
+                p.teleport(loc);
             }
         }
     }
